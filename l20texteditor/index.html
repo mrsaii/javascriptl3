@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Editor</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+	<div class="container border">
+		
+		<h4>Text Editor</h4>
+
+		<div class="row">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Bold Text" data-command="bold">Bold</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Italic Text" data-command="italic">Italic</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Underline Text" data-command="underline">Underline</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Line Through" data-command="strikeThrough">LibeThrough</button>
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Justify Left Text" data-command="justifyLeft"><i class="fas fa-align-left"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Justify Center Text" data-command="justifyCenter"><i class="fas fa-align-center"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Justify Right Text"  data-command="justifyRight"><i class="fas fa-align-right"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Justify Full Text" data-command="justifyFull"><i class="fas fa-align-justify"></i></button>
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Uppercase Text">Upper Case</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Lowercase Text">Lower Case</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Capitalize Text">Capitalize Case</button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Subscript Text" data-command="subscript"><i class="fas fa-subscript"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Superscript Text" data-command="superscript"><i class="fas fa-superscript"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="HR Text" data-command="insertHorizontalRule"><i class="fas fa-ruler"></i></button>
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Order List Text" data-command="insertOrderedList"><i class="fas fa-list-ol"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Unorder List Text" data-command="insertUnorderedList"><i class="fas fa-list-ul"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Select All Text" data-command="selectAll"><i class="fas fa-check"></i></button>
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="BackSpace" data-command="delete"><i class="fas fa-backspace"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Forward Delete" data-command="forwardDelete"><i class="fas fa-trash-alt"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Redo" data-command="redo"><i class="fas fa-redo"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Undo" data-command="undo"><i class="fas fa-undo"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Link" data-command="createLink"><i class="fas fa-link"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Unlink" data-command="unlink"><i class="fas fa-unlink"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Set Image" data-command="insertImage"><i class="fas fa-image"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Copy" data-command="copy"><i class="fas fa-copy"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Cut" data-command="cut"><i class="fas fa-cut"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Paste" data-command="paste"><i class="fas fa-paste"></i></button>
+
+
+				<select name="txtcolor" id="txtcolor" class="btn btn-outline-secondary rounded-0" data-command="foreColor">
+					<option value="black">Black</option>
+					<option value="white">White</option>
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+				</select>
+
+				<select name="bgcolor" id="bgcolor" class="btn btn-outline-secondary rounded-0" data-command="backColor">
+					<option value="black">Black</option>
+					<option value="white">White</option>
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+				</select>
+
+				<select name="fntname" id="fntname" class="btn btn-outline-secondary rounded-0" data-command="fontName">
+					<option value="arial">Arial</option>
+					<option value="century">Century</option>
+					<option value="sans-serif">Sans-Serif</option>
+					<option value="time new rorem">Time New Rorem</option>
+				</select>
+
+
+
+
+
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Clear" data-command="cleartext">Clear</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Remove Format" data-command="removeFormat">Remove Format</button>
+
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<form action="" method="">
+
+					<div class="form-group">
+						<!-- <textarea name="arti" id="textarea" class="form-control" placeholder="Write Something...." rows="15"></textarea> -->
+
+						<!-- <div id="divarea" class="divarea" contenteditable="true" spellcheck="false"></div> -->
+
+						<div id="divarea" class="divarea"></div>
+
+					</div>
+
+					<div class="text-end">
+						<button type="button" class="btn btn-secondary">Cancel</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
